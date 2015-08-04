@@ -38,16 +38,16 @@
                 <br></br>
                 <section class="input-list style-2 clearfix">
           
-              <input id = "hourlywageref"  type="text" placeholder=":wage" oninput = "calcSal();"></input>
+              <input id = "hourlywageref"  type="text" placeholder=":wage" oninput = "calcSal();"></input><a id ="wageErrsal" hidden="hidden">Please enter a positive number.</a>
               
               <br></br>
               Enter hours worked per day:
               <br></br>
-              <input id = "hoursperdayref"  type="text" placeholder=":hours" oninput = "calcSal();"></input>
+              <input id = "hoursperdayref"  type="text" placeholder=":hours" oninput = "calcSal();"></input><a id ="hrsErrsal"  hidden="hidden">Please enter a positive number.</a>
               <br></br>
               Enter days worked per week:
               <br></br>
-              <input id = "daysperweekref"  type="text" placeholder=":days" oninput = "calcSal();"></input>
+              <input id = "daysperweekref"  type="text" placeholder=":days" oninput = "calcSal();"></input><a id ="daysErrsal"  hidden="hidden">Please enter a positive number.</a>
               <br></br>
               Yearly salary: <output id="mockery">0</output>
               
@@ -74,8 +74,17 @@
                 <br></br>
                 <section class="input-list style-2 clearfix">
           
-              <input id = "yearlysalref"  type="text" placeholder=": year salary" oninput = "calcSalHr();"></input>
+              <input id = "yearlysalref"  type="text" placeholder=":salary" oninput = "calcSalHr();"></input><a id ="yrsErrhr" hidden="hidden">Please enter a positive number.</a>
               
+              <br></br>
+              
+              Enter hours worked per day:
+              <br></br>
+              <input id = "hoursperdayrefhr"  type="text" placeholder=":hours" oninput = "calcSalHr();"></input><a id ="hrsErrhr" hidden="hidden">Please enter a positive number.</a>
+              <br></br>
+              Enter days worked per week:
+              <br></br>
+              <input id = "daysperweekrefhr"  type="text" placeholder=":days" oninput = "calcSalHr();"></input><a id ="daysErrhr" hidden="hidden">Please enter a positive number.</a>
               <br></br>
              
               Hourly wage: <output id="mockperhour">0</output>
