@@ -14,3 +14,13 @@
                     $(document.getElementById('mockery')).html(calc).fadeIn(500) ;
                     
                 }
+                
+    function calcSalHr(){
+        
+        $(document.getElementById('mockperhour')).hide();
+                    
+                    var calc = (Math.floor(document.getElementById('yearlysalref').value / 1920));
+                    
+                    $(document.getElementById('mockperhour')).html(calc).fadeIn(500) ;
+    
+    }

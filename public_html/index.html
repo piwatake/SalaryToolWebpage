@@ -31,8 +31,8 @@
             <div id="column_left">
                 <!-- #BeginEditable "content" -->
                 <fieldset>      
-				<legend>Find out how much you make</legend>
-                <form action="action_page.php">
+				<legend>Find out how much you make per year</legend>
+                <form >
                     <br></br>
                 Enter hourly wage:
                 <br></br>
@@ -49,7 +49,36 @@
               <br></br>
               <input id = "daysperweekref"  type="text" placeholder=":days" oninput = "calcSal();"></input>
               <br></br>
-              Yearly wage: <output id="mockery">0</output>
+              Yearly salary: <output id="mockery">0</output>
+              
+
+          
+
+        </section>
+                
+                
+                
+                
+                
+        </form>
+        </fieldset>
+                
+                <br></br>
+                
+                
+                <fieldset>      
+				<legend>Find out how much you make per hour</legend>
+                <form >
+                    <br></br>
+                Enter yearly salary:
+                <br></br>
+                <section class="input-list style-2 clearfix">
+          
+              <input id = "yearlysalref"  type="text" placeholder=": year salary" oninput = "calcSalHr();"></input>
+              
+              <br></br>
+             
+              Hourly wage: <output id="mockperhour">0</output>
               
 
           
@@ -60,6 +89,7 @@
                 
                 </form>
                 </fieldset>
+                
                 <br>
 
                 </br>
