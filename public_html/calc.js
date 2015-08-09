@@ -34,8 +34,8 @@
     }
                 
     function calcSalHr(){
+        $(document.getElementById('yrsErrhr')).hide();
        $(document.getElementById('hrsErrhr')).hide();
-       $(document.getElementById('salErrhr')).hide();
        $(document.getElementById('daysErrhr')).hide();
        $(document.getElementById('mockperhour')).hide();
        
@@ -46,13 +46,16 @@
         var myHrsWork = document.getElementById('hoursperdayrefhr').value ;
         var myDaysWork = document.getElementById('daysperweekrefhr').value;
         
+        
+        if (!isValidNum(myYearSal)){
+            $(document.getElementById('yrsErrhr')).show();
+        }
+        
         if (!isValidNum(myHrsWork)) {
             $(document.getElementById('hrsErrhr')).show();
             console.log("unhidden.\n");
         }
-        if (!isValidNum(myYearSal)){
-            $(document.getElementById('salErrhr')).show();
-        }
+        
         if (!isValidNum(myDaysWork)){
             $(document.getElementById('daysErrhr')).show();
         }
